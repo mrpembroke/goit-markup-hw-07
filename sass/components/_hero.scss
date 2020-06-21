@@ -6,7 +6,44 @@
 
 	text-align: center;
 
-	/* background-color: tomato; */
+	.hero-title {
+		width: 696px;
+		margin-top: 0;
+		margin-bottom: 46px;
+		margin-right: auto;
+		margin-left: auto;
+
+		color: $third-text-color;
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.36;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+
+	.button {
+		display: inline-block;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		padding: 10px 32px;
+		min-width: 200px;
+
+		color: $third-text-color;
+		background-color: $accent-color;
+
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.87;
+		letter-spacing: 0.06em;
+		text-decoration: none;
+		text-align: center;
+
+		cursor: pointer;
+	}
+}
+
+.hero-content:focus {
+	color: $third-text-color;
 }
 
 .overlay {
@@ -21,45 +58,4 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-
-	/* outline: 2px solid green; */
-}
-
-.hero .hero-title {
-	width: 696px;
-	margin-top: 0;
-	margin-bottom: 46px;
-	margin-right: auto;
-	margin-left: auto;
-
-	color: $third-text-color;
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-}
-
-.hero .button {
-	display: inline-block;
-	border: 1px solid transparent;
-	border-radius: 4px;
-	padding: 10px 32px;
-	min-width: 200px;
-
-	color: $third-text-color;
-	background-color: $accent-color;
-
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.87;
-	letter-spacing: 0.06em;
-	text-decoration: none;
-	text-align: center;
-
-	cursor: pointer;
-}
-
-.hero .hero-content:focus {
-	color: $third-text-color;
 }
