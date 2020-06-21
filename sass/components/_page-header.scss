@@ -1,0 +1,120 @@
+.logo-header {
+	color: $accent-color;
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+}
+.logo-header .color {
+	color: #000000;
+}
+
+.main-header {
+	display: flex;
+	align-items: center;
+
+	border-bottom: 1px solid #ececec;
+}
+
+.main-nav {
+	display: flex;
+	align-items: center;
+}
+
+.main-address {
+	margin-left: auto;
+}
+
+/* Site-nav Site-nav Site-nav*/
+
+.site-nav {
+	display: flex;
+	margin-left: 80px;
+}
+
+.site-nav .item + .item {
+	margin-left: 50px;
+}
+
+.site-nav .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: inherit;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	transition: color 250ms $timing-function;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: $accent-color;
+}
+
+.site-nav .link.current {
+	color: $accent-color;
+}
+
+.current {
+	position: relative;
+}
+
+.current::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 4px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	background-color: $accent-color;
+	border-radius: 2px;
+}
+
+/* Address Address Address*/
+
+.address-header .header-link {
+	color: $secondary-text-color;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	transition: color 250ms $timing-function, --color1 2050ms $timing-function;
+}
+
+.icon-mailto {
+	fill: $secondary-text-color;
+	transition: fill 250ms $timing-function;
+}
+
+.icon-phoneto {
+	fill: $secondary-text-color;
+	transition: fill 250ms $timing-function;
+}
+
+.header-link:hover,
+.header-link:focus {
+	color: $accent-color;
+}
+
+.header-link:hover .icon-mailto,
+.header-link:focus .icon-mailto,
+.header-link:hover .icon-phoneto,
+.header-link:focus .icon-phoneto {
+	fill: $accent-color;
+}
+
+.address-header {
+	display: flex;
+}
+
+.address-header .item + .item {
+	margin-left: 30px;
+}
