@@ -474,8 +474,6 @@ body {
 	bottom: 4px;
 }
 
-/* .works .works-img {
-} */
 /* Team Team Team */
 .team {
 	background-color: var(--secondary-bgc-color);
@@ -568,9 +566,6 @@ body {
 }
 
 /* Clients Clients Clients */
-/* .clients {
-	background-color: yellowgreen;
-} */
 
 .clients-list {
 	display: flex;
